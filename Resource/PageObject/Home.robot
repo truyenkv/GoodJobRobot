@@ -14,6 +14,7 @@ Verify home page
     page should contain     Welcome Truyen
 
 Open Manage Administrator page
+    sleep  2
     click element  ${Manage}
     sleep  2
     click element  ${ManageAdministrators}

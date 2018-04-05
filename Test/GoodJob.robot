@@ -28,5 +28,7 @@ Verify create valid Admin account successfully
     sleep  2
     Open Manage User Profile
     sleep   2
-    Create account      truyen      kieu        robot.01@yopmail.com
+    Create account      truyen      kieu        robot.03@yopmail.com
+    sleep   2
+    page should contain     robot.03@yopmail.com
 
