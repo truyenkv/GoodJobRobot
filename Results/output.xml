@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180404 17:22:09.249" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\GitHub\GoodJobRobot\Test\GoodJob.robot" id="s1" name="GoodJob">
+<kw type="setup" name="Open login page" library="CommonKeyword">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180404 17:22:09.722" level="INFO">Opening browser 'chrome' to base url 'http://goodjobs-dev.dynagility.us/'</msg>
+<status status="PASS" endtime="20180404 17:24:18.717" starttime="20180404 17:22:09.722"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180404 17:24:19.893" starttime="20180404 17:24:18.717"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20180404 17:24:22.893" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180404 17:24:22.893" starttime="20180404 17:24:19.893"></status>
+</kw>
+<status status="PASS" endtime="20180404 17:24:22.893" starttime="20180404 17:22:09.721"></status>
+</kw>
+<test id="s1-t1" name="Verify login site success with valid account.">
+<kw name="Login site" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${EmailField}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180404 17:24:22.895" level="INFO">Typing text 'cd.001@yopmail.com' into text field 'id=loginEmail'</msg>
+<status status="PASS" endtime="20180404 17:24:23.471" starttime="20180404 17:24:22.895"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180404 17:24:23.472" level="INFO">Typing text '11111111xx@X' into text field 'id=loginPassword'</msg>
+<status status="PASS" endtime="20180404 17:24:23.893" starttime="20180404 17:24:23.472"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20180404 17:24:26.894" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180404 17:24:26.894" starttime="20180404 17:24:23.893"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${loginbutton}</arg>
+</arguments>
+<msg timestamp="20180404 17:24:26.895" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" endtime="20180404 17:24:27.089" starttime="20180404 17:24:26.895"></status>
+</kw>
+<status status="PASS" endtime="20180404 17:24:27.089" starttime="20180404 17:24:22.895"></status>
+</kw>
+<kw name="Verify home page" library="Home">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20180404 17:24:31.091" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20180404 17:24:31.091" starttime="20180404 17:24:27.090"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Working Metrics</arg>
+</arguments>
+<msg timestamp="20180404 17:24:31.126" level="INFO">Page title is 'Working Metrics'.</msg>
+<status status="PASS" endtime="20180404 17:24:31.126" starttime="20180404 17:24:31.092"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Companies</arg>
+</arguments>
+<msg timestamp="20180404 17:24:31.153" level="INFO">Current page contains text 'Companies'.</msg>
+<status status="PASS" endtime="20180404 17:24:31.153" starttime="20180404 17:24:31.127"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Welcome Truyen</arg>
+</arguments>
+<msg timestamp="20180404 17:24:31.177" level="INFO">Current page contains text 'Welcome Truyen'.</msg>
+<status status="PASS" endtime="20180404 17:24:31.178" starttime="20180404 17:24:31.153"></status>
+</kw>
+<status status="PASS" endtime="20180404 17:24:31.178" starttime="20180404 17:24:27.090"></status>
+</kw>
+<doc>verify home page after login success</doc>
+<tags>
+<tag>login</tag>
+</tags>
+<status status="PASS" endtime="20180404 17:24:31.178" critical="yes" starttime="20180404 17:24:22.893"></status>
+</test>
+<kw type="teardown" name="Close page" library="CommonKeyword">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180404 17:24:34.277" starttime="20180404 17:24:31.180"></status>
+</kw>
+<status status="PASS" endtime="20180404 17:24:34.277" starttime="20180404 17:24:31.180"></status>
+</kw>
+<doc>Some test case to check goodjob</doc>
+<status status="PASS" endtime="20180404 17:24:34.277" starttime="20180404 17:22:09.255"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">login</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="GoodJob" pass="1">GoodJob</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
