@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180405 18:14:38.713" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<robot generated="20180406 17:30:31.716" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
 <suite source="D:\GitHub\GoodJobRobot\Test\GoodJob.robot" id="s1" name="GoodJob">
 <kw type="setup" name="Open login page" library="CommonKeyword">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,24 +8,24 @@
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180405 18:14:39.042" level="INFO">Opening browser 'chrome' to base url 'http://goodjobs-dev.dynagility.us/'</msg>
-<status status="PASS" endtime="20180405 18:15:32.512" starttime="20180405 18:14:39.041"></status>
+<msg timestamp="20180406 17:30:32.174" level="INFO">Opening browser 'chrome' to base url 'http://goodjobs-dev.dynagility.us/'</msg>
+<status status="PASS" endtime="20180406 17:31:24.774" starttime="20180406 17:30:32.174"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180405 18:15:33.669" starttime="20180405 18:15:32.512"></status>
+<status status="PASS" endtime="20180406 17:31:25.943" starttime="20180406 17:31:24.775"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20180405 18:15:36.669" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:36.669" starttime="20180405 18:15:33.669"></status>
+<msg timestamp="20180406 17:31:28.944" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:28.944" starttime="20180406 17:31:25.944"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:15:36.669" starttime="20180405 18:14:39.041"></status>
+<status status="PASS" endtime="20180406 17:31:28.944" starttime="20180406 17:30:32.173"></status>
 </kw>
-<test id="s1-t1" name="Verify create valid Admin account successfully">
+<test id="s1-t1" name="Verify enable admin account successfully">
 <kw name="Login site" library="Login">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -33,8 +33,8 @@
 <arg>${EmailField}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:36.671" level="INFO">Typing text 'cd.001@yopmail.com' into text field 'id=loginEmail'</msg>
-<status status="PASS" endtime="20180405 18:15:37.185" starttime="20180405 18:15:36.671"></status>
+<msg timestamp="20180406 17:31:28.946" level="INFO">Typing text 'cd.001@yopmail.com' into text field 'id=loginEmail'</msg>
+<status status="PASS" endtime="20180406 17:31:29.530" starttime="20180406 17:31:28.946"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -42,34 +42,34 @@
 <arg>${PasswordField}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:37.185" level="INFO">Typing text '11111111xx@X' into text field 'id=loginPassword'</msg>
-<status status="PASS" endtime="20180405 18:15:37.563" starttime="20180405 18:15:37.185"></status>
+<msg timestamp="20180406 17:31:29.531" level="INFO">Typing text '11111111xx@X' into text field 'id=loginPassword'</msg>
+<status status="PASS" endtime="20180406 17:31:29.966" starttime="20180406 17:31:29.530"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20180405 18:15:40.564" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:40.564" starttime="20180405 18:15:37.563"></status>
+<msg timestamp="20180406 17:31:32.967" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:32.967" starttime="20180406 17:31:29.967"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${loginbutton}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:40.564" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" endtime="20180405 18:15:40.745" starttime="20180405 18:15:40.564"></status>
+<msg timestamp="20180406 17:31:32.968" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" endtime="20180406 17:31:33.140" starttime="20180406 17:31:32.967"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:15:40.745" starttime="20180405 18:15:36.670"></status>
+<status status="PASS" endtime="20180406 17:31:33.141" starttime="20180406 17:31:28.945"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20180405 18:15:45.746" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:45.746" starttime="20180405 18:15:40.746"></status>
+<msg timestamp="20180406 17:31:38.142" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:38.142" starttime="20180406 17:31:33.141"></status>
 </kw>
 <kw name="Open Manage Administrator page" library="Home">
 <kw name="Sleep" library="BuiltIn">
@@ -77,42 +77,42 @@
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180405 18:15:47.748" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:47.748" starttime="20180405 18:15:45.747"></status>
+<msg timestamp="20180406 17:31:40.143" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:40.143" starttime="20180406 17:31:38.143"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Manage}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:47.748" level="INFO">Clicking element 'xpath=//*[.='Manage']'.</msg>
-<status status="PASS" endtime="20180405 18:15:47.949" starttime="20180405 18:15:47.748"></status>
+<msg timestamp="20180406 17:31:40.144" level="INFO">Clicking element 'xpath=//*[.='Manage']'.</msg>
+<status status="PASS" endtime="20180406 17:31:40.439" starttime="20180406 17:31:40.143"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180405 18:15:49.950" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:49.950" starttime="20180405 18:15:47.950"></status>
+<msg timestamp="20180406 17:31:42.440" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:42.440" starttime="20180406 17:31:40.439"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${ManageAdministrators}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:49.951" level="INFO">Clicking element 'xpath=//*[contains(text(),'Manage Administrators')]'.</msg>
-<status status="PASS" endtime="20180405 18:15:50.169" starttime="20180405 18:15:49.951"></status>
+<msg timestamp="20180406 17:31:42.441" level="INFO">Clicking element 'xpath=//*[contains(text(),'Manage Administrators')]'.</msg>
+<status status="PASS" endtime="20180406 17:31:42.670" starttime="20180406 17:31:42.441"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:15:50.169" starttime="20180405 18:15:45.746"></status>
+<status status="PASS" endtime="20180406 17:31:42.670" starttime="20180406 17:31:38.143"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180405 18:15:52.171" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:52.171" starttime="20180405 18:15:50.171"></status>
+<msg timestamp="20180406 17:31:44.674" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:44.674" starttime="20180406 17:31:42.673"></status>
 </kw>
 <kw name="Open Manage User Profile" library="ManageAdmin">
 <kw name="Click Element" library="Selenium2Library">
@@ -120,33 +120,33 @@
 <arguments>
 <arg>${AddUser}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:52.172" level="INFO">Clicking element 'xpath=//button[contains(text(),'Add User')]'.</msg>
-<status status="PASS" endtime="20180405 18:15:52.369" starttime="20180405 18:15:52.172"></status>
+<msg timestamp="20180406 17:31:44.675" level="INFO">Clicking element 'xpath=//button[contains(text(),'Add User')]'.</msg>
+<status status="PASS" endtime="20180406 17:31:44.908" starttime="20180406 17:31:44.675"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:15:52.369" starttime="20180405 18:15:52.171"></status>
+<status status="PASS" endtime="20180406 17:31:44.908" starttime="20180406 17:31:44.674"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180405 18:15:54.371" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:54.371" starttime="20180405 18:15:52.371"></status>
+<msg timestamp="20180406 17:31:46.909" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:46.909" starttime="20180406 17:31:44.909"></status>
 </kw>
 <kw name="Create account" library="ManageUserProfile">
 <doc>support input text to field.</doc>
 <arguments>
-<arg>truyen</arg>
-<arg>kieu</arg>
-<arg>robot.03@yopmail.com</arg>
+<arg>truyen1</arg>
+<arg>kieu1</arg>
+<arg>robot.02@yopmail.com</arg>
 </arguments>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>2</arg>
+<arg>1</arg>
 </arguments>
-<msg timestamp="20180405 18:15:56.373" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:15:56.373" starttime="20180405 18:15:54.372"></status>
+<msg timestamp="20180406 17:31:47.911" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180406 17:31:47.911" starttime="20180406 17:31:46.910"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -154,16 +154,16 @@
 <arg>${FirstNameField}</arg>
 <arg>${first_name}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:56.373" level="INFO">Typing text 'truyen' into text field 'id=firstNameInput'</msg>
-<status status="PASS" endtime="20180405 18:15:56.575" starttime="20180405 18:15:56.373"></status>
+<msg timestamp="20180406 17:31:47.912" level="INFO">Typing text 'truyen1' into text field 'id=firstNameInput'</msg>
+<status status="PASS" endtime="20180406 17:31:48.172" starttime="20180406 17:31:47.911"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180405 18:15:57.576" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180405 18:15:57.576" starttime="20180405 18:15:56.576"></status>
+<msg timestamp="20180406 17:31:49.173" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180406 17:31:49.173" starttime="20180406 17:31:48.172"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -171,16 +171,16 @@
 <arg>${LastNameField}</arg>
 <arg>${last_name}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:57.576" level="INFO">Typing text 'kieu' into text field 'id=lastNameInput'</msg>
-<status status="PASS" endtime="20180405 18:15:57.755" starttime="20180405 18:15:57.576"></status>
+<msg timestamp="20180406 17:31:49.174" level="INFO">Typing text 'kieu1' into text field 'id=lastNameInput'</msg>
+<status status="PASS" endtime="20180406 17:31:49.421" starttime="20180406 17:31:49.173"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180405 18:15:58.755" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180405 18:15:58.755" starttime="20180405 18:15:57.755"></status>
+<msg timestamp="20180406 17:31:50.421" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180406 17:31:50.421" starttime="20180406 17:31:49.421"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -188,71 +188,89 @@
 <arg>${MUPEmailField}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20180405 18:15:58.756" level="INFO">Typing text 'robot.03@yopmail.com' into text field 'id=emailInput'</msg>
-<status status="PASS" endtime="20180405 18:15:59.172" starttime="20180405 18:15:58.755"></status>
+<msg timestamp="20180406 17:31:50.422" level="INFO">Typing text 'robot.02@yopmail.com' into text field 'id=emailInput'</msg>
+<status status="PASS" endtime="20180406 17:31:50.935" starttime="20180406 17:31:50.422"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20180405 18:16:00.173" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180405 18:16:00.173" starttime="20180405 18:15:59.172"></status>
+<msg timestamp="20180406 17:31:51.935" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180406 17:31:51.935" starttime="20180406 17:31:50.935"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${SaveBtn}</arg>
 </arguments>
-<msg timestamp="20180405 18:16:00.173" level="INFO">Clicking element 'xpath=//button[contains(text(),'Save')]'.</msg>
-<status status="PASS" endtime="20180405 18:16:00.296" starttime="20180405 18:16:00.173"></status>
+<msg timestamp="20180406 17:31:51.936" level="INFO">Clicking element 'xpath=//button[contains(text(),'Save')]'.</msg>
+<status status="PASS" endtime="20180406 17:31:52.161" starttime="20180406 17:31:51.936"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:16:00.297" starttime="20180405 18:15:54.372"></status>
+<status status="PASS" endtime="20180406 17:31:52.162" starttime="20180406 17:31:46.910"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180405 18:16:02.299" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180405 18:16:02.299" starttime="20180405 18:16:00.298"></status>
+<msg timestamp="20180406 17:31:54.163" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180406 17:31:54.163" starttime="20180406 17:31:52.162"></status>
 </kw>
-<kw name="Page Should Contain" library="Selenium2Library">
-<doc>Verifies that current page contains `text`.</doc>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
 <arguments>
-<arg>robot.03@yopmail.com</arg>
+<arg>Confirmation</arg>
+<arg>robot.102@yopmail.com was previously used and deleted from the system. Do you want to re-enable this account?</arg>
 </arguments>
-<msg timestamp="20180405 18:16:02.346" level="INFO">Current page contains text 'robot.03@yopmail.com'.</msg>
-<status status="PASS" endtime="20180405 18:16:02.347" starttime="20180405 18:16:02.300"></status>
+<msg timestamp="20180406 17:32:14.867" level="FAIL">No value provided by user.</msg>
+<status status="FAIL" endtime="20180406 17:32:14.867" starttime="20180406 17:31:54.163"></status>
 </kw>
-<doc>create valid account</doc>
+<doc>create archived account</doc>
 <tags>
+<tag>archived</tag>
 <tag>manageadmin</tag>
 </tags>
-<status status="PASS" endtime="20180405 18:16:02.347" critical="yes" starttime="20180405 18:15:36.669"></status>
+<status status="FAIL" endtime="20180406 17:32:14.869" critical="yes" starttime="20180406 17:31:28.944">No value provided by user.</status>
 </test>
 <kw type="teardown" name="Close page" library="CommonKeyword">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180405 18:16:05.413" starttime="20180405 18:16:02.350"></status>
+<status status="PASS" endtime="20180406 17:32:18.008" starttime="20180406 17:32:14.872"></status>
 </kw>
-<status status="PASS" endtime="20180405 18:16:05.413" starttime="20180405 18:16:02.349"></status>
+<status status="PASS" endtime="20180406 17:32:18.008" starttime="20180406 17:32:14.872"></status>
 </kw>
 <doc>Some test case to check goodjob</doc>
-<status status="PASS" endtime="20180405 18:16:05.413" starttime="20180405 18:14:38.732"></status>
+<status status="FAIL" endtime="20180406 17:32:18.009" starttime="20180406 17:30:31.722"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">manageadmin</stat>
+<stat fail="1" pass="0">archived</stat>
+<stat fail="1" pass="0">manageadmin</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="GoodJob" pass="1">GoodJob</stat>
+<stat fail="1" id="s1" name="GoodJob" pass="0">GoodJob</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20180406 17:30:32.126" level="ERROR">Error in file 'D:\GitHub\GoodJobRobot\Test\GoodJob.robot': Importing test library 'Selenium3Library' failed: ImportError: No module named Selenium3Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\windows\SYSTEM32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages
+  c:\python27\lib\site-packages\win32
+  c:\python27\lib\site-packages\win32\lib
+  c:\python27\lib\site-packages\Pythonwin
+  c:\python27\lib\site-packages\wx-2.8-msw-unicode</msg>
 </errors>
 </robot>

@@ -11,15 +11,18 @@ ${SaveBtn}             xpath=//button[contains(text(),'Save')]
 Create account
     [Documentation]  support input text to field.
     [Arguments]     ${first_name}    ${last_name}   ${email}
-    sleep  2
-#    click element   ${FirstNameField}
+    sleep  1
     input text      ${FirstNameField}    ${first_name}
     sleep  1
-#    click element   ${LastNameField}
     input text      ${LastNameField}     ${last_name}
     sleep  1
-#    log to console  ${MUPEmailField}
-#    click element   ${MUPEmailField}
     input text      ${MUPEmailField}        ${email}
     sleep  1
     click element  ${SaveBtn}
+
+
+Enable archived account
+    sleep  1
+    click element       //*[.='Enable']
+
+
