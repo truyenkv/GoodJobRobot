@@ -9,4 +9,3 @@ ${AddUser}      xpath=//button[contains(text(),'Add User')]
 *** Keywords ***
 Open Manage User Profile
     click element       ${AddUser}
-

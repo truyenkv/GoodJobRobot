@@ -4,7 +4,7 @@ Library         Selenium2Library
 *** Variables ***
 ${FirstNameField}        id=firstNameInput
 ${LastNameField}         id=lastNameInput
-${MUPEmailField}            id=emailInput
+${MUPEmailField}         id=emailInput
 ${SaveBtn}             xpath=//button[contains(text(),'Save')]
 
 *** Keywords ***
@@ -39,6 +39,18 @@ Verify duplicate message
     sleep  1
     should be equal     ${duplicate_message}    ${error_message}
     click element       xpath=//*[.='Cancel']
+
+
+Update account
+    [Documentation]  update first name and last name
+    [Arguments]     ${first_name}    ${last_name}
+    sleep  1
+    input text      ${FirstNameField}    ${first_name}
+    sleep  1
+    input text      ${LastNameField}     ${last_name}
+    sleep  1
+    click element  ${SaveBtn}
+
 
 
 
