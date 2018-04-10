@@ -22,7 +22,23 @@ Create account
 
 
 Enable archived account
+    [Documentation]  verify and enable archived account.
+    [Arguments]  ${warning}
     sleep  1
-    click element       //*[.='Enable']
+    ${dialog_text}      get text        xpath=//*[@class='modal-body']
+    should be equal     ${warning}      ${dialog_text}
+    sleep  1
+    click element       xpath=//*[.='Enable']
+
+
+Verify duplicate message
+    [Documentation]  Verify error message displays when create duplicate account
+    [Arguments]  ${duplicate_message}
+    sleep  1
+    ${error_message}    get text      xpath=//*[@class='gj-error alert alert-danger']
+    sleep  1
+    should be equal     ${duplicate_message}    ${error_message}
+    click element       xpath=//*[.='Cancel']
+
 
 
