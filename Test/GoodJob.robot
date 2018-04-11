@@ -89,8 +89,10 @@ Verify create new company success
     [Tags]      manageadmin     company
     Login site
     sleep  5
-    Open Manage Company page
+    Open Manage Companies page
     sleep  2
+    Open Manage Company page
+    sleep  4
     Create a company        truyen1
 
 

@@ -17,7 +17,7 @@ Verify home page
 
 Open Manage Administrator page
     sleep  2
-    click element  ${Manage}
+    Open Manage Companies page
     sleep  2
     click element  ${ManageAdministrators}
 
