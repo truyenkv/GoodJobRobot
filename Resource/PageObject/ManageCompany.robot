@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-
+Library     ../../Library/KeyboardHandler.py
 *** Variables ***
 ${CompanyName}                  id=companyNameInput
 ${CompanyIdentifier}            id=einInput
@@ -18,7 +18,19 @@ Create a company
     sleep  2
     click element       ${Sector/Industy}
     sleep  2
-    input text          ${Sector/Industy}        Mining
+    double_press_down
+    sleep  1
+    press_enter
+    sleep  1
+    press_tab
+    sleep  1
+    double_press_down
+    sleep  1
+    press_enter
+    sleep  1
+    press_tab
+    sleep  1
+    double_press_down
+    sleep  1
+    press_enter
     sleep  5
-
-
